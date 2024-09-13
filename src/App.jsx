@@ -1,9 +1,9 @@
 // import logo from './logo.svg';
 import './App.css'
-import { Navigation } from './components/Navigation.jsx'
-import { Sidebar } from './components/Sidebar.jsx'
-import { Player } from './components/Player.jsx'
-import { Centerblock } from './components/Centerblock.jsx'
+import { Navigation } from './components/navigation/Navigation'
+import { Centerblock } from './components/centerblock/Centerblock'
+import { Sidebar } from './components/sidebar/Sidebar'
+import { Player } from './components/player/Player'
 
 function App() {
   return (
