@@ -1,35 +1,17 @@
 // import logo from './logo.svg';
 import './App.css';
-import {Player} from "./components/Player.jsx"
+import { Navigation } from "./components/Navigation.jsx"
+import { Sidebar } from "./components/Sidebar.jsx"
+import { Player } from "./components/Player.jsx"
+
 
 function App() {
   return (
     <div class="wrapper">
       <div class="container">
         <main class="main">
-          <nav class="main__nav nav">
-            <div class="nav__logo logo">
-              <img class="logo__image" src="img/logo.png" alt="logo" />
-            </div>
-            <div class="nav__burger burger">
-              <span class="burger__line"></span>
-              <span class="burger__line"></span>
-              <span class="burger__line"></span>
-            </div>
-            <div class="nav__menu menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="localhost:3000" class="menu__link">Главное</a>
-                </li>
-                <li class="menu__item">
-                  <a href="localhost:3000" class="menu__link">Мой плейлист</a>
-                </li>
-                <li class="menu__item">
-                  <a href="../signin.html" class="menu__link">Войти</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+          <Navigation />
+          
           <div class="main__centerblock centerblock">
             <div class="centerblock__search search">
               <svg class="search__svg">
@@ -609,47 +591,8 @@ function App() {
               </div>
             </div>
           </div>
-          <div class="main__sidebar sidebar">
-            <div class="sidebar__personal">
-              <p class="sidebar__personal-name">Sergey.Ivanov</p>
-              <div class="sidebar__icon">
-                <svg alt="logout">
-                  <use xlinkHref="img/icon/sprite.svg#logout"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="sidebar__block">
-              <div class="sidebar__list">
-                <div class="sidebar__item">
-                  <a class="sidebar__link" href="localhost:3000">
-                    <img
-                      class="sidebar__img"
-                      src="img/playlist01.png"
-                      alt="day's playlist"
-                    />
-                  </a>
-                </div>
-                <div class="sidebar__item">
-                  <a class="sidebar__link" href="localhost:3000">
-                    <img
-                      class="sidebar__img"
-                      src="img/playlist02.png"
-                      alt="day's playlist"
-                    />
-                  </a>
-                </div>
-                <div class="sidebar__item">
-                  <a class="sidebar__link" href="localhost:3000">
-                    <img
-                      class="sidebar__img"
-                      src="img/playlist03.png"
-                      alt="day's playlist"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Sidebar />
+          
         </main>
         <Player />
         <footer class="footer"></footer>
